@@ -24,8 +24,30 @@ This repo contain all stack related basic Implementation along with stack creati
 
 <img src="https://prepinsta.com/wp-content/uploads/2023/02/Infix-to-Postfixin-in-java-using-Stacks-.webp" height="50%" width="50%" ></img>
 
-<h2>1) Infix to Prefix : </h2>
+<h2>2) Infix to Prefix : </h2>
 <pre>
 All Algorithm is same as infix to postfix but small difference is that we perform iteration on reverse of inputed string or expression and after performing and generating final output the required output is also reverse of final output
 </pre>
+<img src="https://prepinsta.com/wp-content/uploads/2023/02/Infix-to-prefix-conversion.webp" height="50%" width="50%" ></img>
 
+<h2>3) Prefix Evaluation : </h2>
+<pre>
+1. Here we create 1 interger type stack in which we store the all operands and ther result and one string for Input Expression(prefix)
+2. After getting input prefix expression we revert it and use it for iteration here we do reverse process which we do in expression conversion here we store operands in stack
+3. while store operands we first convert them into integer since they are in char datatype for that we simply substract that char number from '0' characater means substracting ascii value of incoming character from ascii value of '0'
+
+character = 1 ascii(49)
+character = 0 ascii(48)
+so by substracting 49 from 48 we get 1 (int) 
+
+4. after doing that when any operator is come as character first pop the top and copy the value of top into operand 2 and after that pop again and copy the value of new stack top into operand 1 
+5. And now pass this to evaluate function which take parameters as op1,op2 and operator character and returns the result in interger and we push this integer into the stack 
+6. this process go on and on till the complete input string exaust 
+7. at last we print the output which is answer of expression which is at stack top 
+</pre>
+
+<h2>4) Postfix Evaluation : </h2>
+<pre>
+1.Here all Algorithms is same as above only 2 changes one is there is no requirement of reversing the input expression and one more is when we pop the stack first operand 1 get filled after that operand 2 get filled 
+rest all algo is same as above
+</pre>
