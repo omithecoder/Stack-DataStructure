@@ -22,7 +22,7 @@ This repo contain all stack related basic Implementation along with stack creati
 7. after all of this we push all remaing character in stack into output vector and print the output 
 </pre>
 
-<img src="https://slideplayer.com/slide/14975584/91/images/3/Infix+to+Postfix+%28algorithm+1%29.jpg" height="10%" width="10%" ></img>
+<img src="https://prepinsta.com/wp-content/uploads/2023/02/Infix-to-Postfixin-in-java-using-Stacks-.webp" height="50%" width="50%" ></img>
 
 <h2>1) Infix to Prefix : </h2>
 <pre>
